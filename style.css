@@ -1,41 +1,41 @@
-/* まず、style.cssにこのルールを書き入れてください。 
- セレクタ｛
- 　プロパティ：値;
- ｝
- p{
-     color:red;
- }
-  idセレクタは　頭に#を付ける。１度しか指定できない
-  #foo{
-  クラスセレクタは頭に.を付ける。複数同じクラス名を持てる。
-　  
+/* クラス や id と、 display、position、flex-box プロパティを駆使して、ページの体裁を整えることができます。*/
+body{
+    font-size: large;
+    /*background-color: rgb(160, 233, 209);*/
+}
+div{
+    font-size: larger;    
+}
+.inline_div{
+    color: rgb(155, 102, 199);
 
-*/
-body {
-    font-size: 200%;
-    font-family: Century;
-  }
-  
-  /* ここにルールを足していきましょう。*/
-h1 {  /*a */
-    color: blue;
 }
-.little{  /*b,e */
-    background-color: yellow; 
-    font-size: 50%;
+.especial{
+    background-color: rgb(236, 106, 106);
+    color: white;
 }
-span {  /* 同じクラス内でもspan部分だけ異なる書式を追加できる */
-    color: green;
+.title{
+    border: 2px solid green;
 }
-.awesome{  /* c */
-    background-color: yellow; 
-    font-weight:900;
+.picture{
+    /*float:right;/*
+    /* positionは relative,absolute,fixed,stickyがある*/
+    position:fixed; 
+    top: 0px;
+    right:0px;
+
 }
-#d{    /* d */
-    background-color: yellow; 
-    color: red;
+.parent{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items:center;
+    width: 300px;
+    height:400px;
+    border:3px solid green;
 }
-.great{ /*f*/
-    background-color: yellow; 
-    font-weight:800;
+.child{
+    width:100px;
+    height: 100px;
+    background-color: orange;
 }
