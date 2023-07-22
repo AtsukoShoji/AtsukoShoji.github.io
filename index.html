@@ -1,30 +1,50 @@
-//応用2 関数 unique を宣言してください。
-//引数として配列を 1 つとり、重複していない値のみが入った新しい配列を返してください。
+<!DOCTYPE html>
+<html lang="ja">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>自己紹介</title>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
 
-/**
-    * @param {Array<any>} array
-    * @returns {Array<any>} 重複していない値のみが入った新しい配列
-    */
+   <body>
+      <h1> <id class = "title">自己紹介</id> </h1>
+      <h2>
+         名前:庄司敦子
+         <br>
+         職業：会社員
+         <br>
+         住所：岡崎市  
+      </h2>
+        <ul>
+         【趣味】
+         <li>映画鑑賞（主に<id class= especial>洋画</id>）</li>
+         <li>読書</li>
+         <li>一人カラオケ</li>
+       
+         【興味のあること】<br>
+         <li>小説を書く</li>
+         </ul>
+      <p class="picture"><img src="写真.jpg" alt="写真"  width="300" height="300"/>
+      </p>
+      <p class="inline_div">ああああ<strong>いいい</strong>ううう
+      ええええええええええええええええええええええええおおおおお
+      おおお>おおおおおおおおおおおおおおおおおおおおおおおおおおおおおおおお
+       <br>
+      >おおおおおおおおおおおおおおおおおおお</p>
+      <P>aaaaaaaaaaaaaaaaaaaaaaaaaaa</P>
+      <p>bbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+      <br>
+      <br>
 
-function unique(array){
-  const result = [];
-  let UnipueBoolean = false;
-  for (const arrayValue of array){
-    for (let i = 0; i < array.length; i++){
-      //配列最初から文字が含まれているか確認していく
-      //同じものがあれば booleanはfalseのまま
-      if (arrayValue === array[i]){
-        UnipueBoolean = false;
-      } else {
-        UnipueBoolean = true;
-      }
-    } //for 終わり
-    if (UnipueBoolean === true){
-      result.push(arrayValue);
-    } 
-  }
-  return result;   
-}
+      <p>ccccccccccccc</P> 
+         <div class="parent">
+            あああ
+            <div class="child">いいいい</div>
+            <div class="child">うううう</div>
+            <div class="child">ええええ</div>
+         </div>
+      
+   </body>
+</html>
 
-test(unique([1, 1, 1, 1, 1]), []);
-test(unique([1, 3, 4, 5, 2, 4]), [1, 3, 5, 2]);
