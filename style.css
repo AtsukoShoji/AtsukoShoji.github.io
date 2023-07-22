@@ -1,0 +1,41 @@
+/* まず、style.cssにこのルールを書き入れてください。 
+ セレクタ｛
+ 　プロパティ：値;
+ ｝
+ p{
+     color:red;
+ }
+  idセレクタは　頭に#を付ける。１度しか指定できない
+  #foo{
+  クラスセレクタは頭に.を付ける。複数同じクラス名を持てる。
+　  
+
+*/
+body {
+    font-size: 200%;
+    font-family: Century;
+  }
+  
+  /* ここにルールを足していきましょう。*/
+h1 {  /*a */
+    color: blue;
+}
+.little{  /*b,e */
+    background-color: yellow; 
+    font-size: 50%;
+}
+span {  /* 同じクラス内でもspan部分だけ異なる書式を追加できる */
+    color: green;
+}
+.awesome{  /* c */
+    background-color: yellow; 
+    font-weight:900;
+}
+#d{    /* d */
+    background-color: yellow; 
+    color: red;
+}
+.great{ /*f*/
+    background-color: yellow; 
+    font-weight:800;
+}
