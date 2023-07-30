@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="ja">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>自己紹介</title>
-      <link rel="stylesheet" type="text/css" href="style.css" />
-   </head>
 
-   <body>
-      <h1> <id class = "title">自己紹介</id> </h1>
-      <h2>
-         名前:庄司敦子
-         <br>
-         職業：会社員
-         <br>
-         住所：岡崎市  
-      </h2>
-        <ul>
-         【趣味】
-         <li>映画鑑賞（主に<id class= especial>洋画</id>）</li>
-         <li>読書</li>
-         <li>一人カラオケ</li>
-       
-         【興味のあること】<br>
-         <li>小説を書く</li>
-         </ul>
-      <p class="picture"><img src="写真.jpg" alt="写真"  width="300" height="300"/>
-      </p>
-      <p class="inline_div">ああああ<strong>いいい</strong>ううう
-      ええええええええええええええええええええええええおおおおお
-      おおお>おおおおおおおおおおおおおおおおおおおおおおおおおお
-       <br>
-      >おおおおおおおおおおおおおおおおおおお</p>
-      <P>aaaaaaaaaaaaaaaaaaaaaaaaaaa</P>
-      <p>bbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
-      <br>
-      <br>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+  <meta name="theme-color" content="#000000">
+  <title>もりのおさんぽ</title>
+</head>
 
-      <p>ccccccccccccc</P> 
-         <div class="parent">
-            あああ
-            <div class="child">いいいい</div>
-            <div class="child">うううう</div>
-            <div class="child">ええええ</div>
-         </div>
+<body>
+  <div id="title">
+      <h1>もりにあそびにきたよ！<br>
+        だれとあえるかな？</h1>
+  </div>
+
+  
+  <!-- ひとつのブロックの中で、絵は左・文字は右に出したい -->
+  <div id="main">
+    <!-- 左の絵のブロック -->
+    <div class="backmori1">
+      <!-- 重ねる絵のブロック -->
+      <div class ="picture">
+        <!-- <div class= "changePicture"> -->
+          <!-- 表示させたい画像を並べる -->
+          <img class="bear" src="bear.png" width="250px">
+          <img class="rabbit" src="rabbit.png" width="200px">
+          <img class="none" src="none.png" width="200px">
+          <img class="birdTail" src="birdTail.png" width="50px">
+          <img class="bird" src="bird.png" width="200px">
+          <img class="tyranHead" src="tyranHead.png" width="80px">
+          <img class="tyranno" src="tyrannosaurus.png" width="500px" >
+          <!-- </div> -->
+        </div>
+    </div>
+    <div class="backText">
+      <br><br><br>
+      <!-- 右の文字　インライン -->
+      <div class="text">だれかいるかなあ？</div>
+      <div>
+          <button class="button" type="button">くりっくしてね！</button> 
+      </div>
       
-   </body>
-</html>
+    </div>
+  </div>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+</body>
 
+</html>
