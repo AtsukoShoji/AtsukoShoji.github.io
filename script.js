@@ -6,11 +6,11 @@
 //右側に表示させたい文章が入った配列をつくる。（文だけだとわかりにくかったのでclass名も加えてオブジェクトにした）
 const array = [
     {
-        class: "bear", 
+        class: "bear", //使わないがわかりやすいように表示
       text: "くまさんがいたよ！　こんにちは！",
     },
     {
-      class: "none", //使わないがわかりやすいように表示
+      class: "rabbitEar", 
       text: "だれか　かくれているよ。<br>おしてみよう！",
     },
     {
@@ -63,12 +63,12 @@ function getPicture(){
         //クリックした回数に対応した絵を表示させる
         picture[clickCount].style.visibility = "visible";
         
-        //鳥のしっぽと恐竜の鼻？の所はボタン非表示にしたい
+        //うさぎの耳と鳥のしっぽ、恐竜の鼻？の所はボタン非表示にしたい
         if (clickCount === 1 || clickCount === 3 || clickCount === 5){
             button1.style.visibility = 'hidden';
             // document.querySelector(".button1").style.visibility = 'hidden';
         } 
-        //処理順としては、次に 鳥のしっぽ か恐竜の頭を押す（別のクリックイベント）
+        //処理順としては、次に うさ耳・鳥の尾 か恐竜の頭を押す（別のクリックイベント）
     //最後（恐竜がでた後）だったら、main1を非表示にしてmain2を出す
     } else {
         document.getElementById("main").style.display = 'none';
@@ -110,24 +110,17 @@ tyranHead.addEventListener("click", tyranAppear);
 function tyranAppear(){
     tyranHead.style.visibility = "hidden";
     button1.style.visibility = 'visible';
-    //ボタンを「くりっくしてね！」ではなく「にげる！」に変更
+    //ボタンを「たっちしてね！」ではなく「にげる！」に変更
     button1.innerHTML = "　　にげる！　　 "
     document.querySelector(".button2").style.visibility = "visible";
     picture[clickCount].style.visibility = "visible";
     text[0].innerHTML = array[clickCount].text;
- 
-    //tyrannoを動かす
-    tyranno.animate( [ 
-        {transform: "translateX(0)"},
-        {transform: "translateX(1000px)"}
-        ],
-        {duration: 6000,
-        iterations:Infinity
-        })  
+
+        document.getElementById("none").innerText = "←";
 };
 
 
-//いっしょにあそぼう！(button2）をクリックしたらmain1を非表示にしてmain2を表示する
+//いっしょにあそぼう！(button2）をクリックしたらmain1を非表示にしてmain3を表示する
 const button2 = document.querySelector(".button2");
 button2.addEventListener("click", () => {
   document.getElementById("main").style.display = 'none';
@@ -135,9 +128,6 @@ button2.addEventListener("click", () => {
 });
 
 
-if (clickCount >= 7){
-    document.getElementById("none").innerText = "←";
-  }
 const back = document.getElementById("none");
 back.addEventListener("click", () => {
   document.getElementById("main").style.display = 'block';
