@@ -1,3 +1,4 @@
+
 body {
     text-align:center;
     background-color: rgb(217, 247, 247)
@@ -110,6 +111,11 @@ body {
     cursor: pointer;
 }
 
+#none{
+    display: block;
+}
+
+
 /* ２つめの画像 */
 #main2{
     margin-right: auto;
@@ -136,3 +142,5 @@ body {
     font-size: 40px;
     display:none;
 }
+
+
