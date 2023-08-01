@@ -78,16 +78,16 @@ body {
 
 .tyranno{
     margin-top: 40px;
-    margin-right: 400px;
+    margin-right: 500px;
     position: absolute;
     visibility: hidden;
-    animation: anim 60s;
+    /* animation: anim 60s; */
 }
 
-@keyframes anim {
-    0% {transform:translateX(-100px);}
-    100%{transform: translateX(800px);}
-    }
+/* @keyframes anim {
+    0% {transform:translateX(0px);}
+    100%{transform: translateX(600px);}
+    } */
 
 .text {
     padding: auto;
