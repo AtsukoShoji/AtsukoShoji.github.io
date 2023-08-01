@@ -3,7 +3,6 @@
 
 //1-森の背景で、クリックするたびにちがう動物の画像とそのペアの値を表示させる
 //2-1の最後に選んだボタンによって物語を変える（クイズにする？）
-
 //右側に表示させたい文章が入った配列をつくる。（文だけだとわかりにくかったのでclass名も加えてオブジェクトにした）
 const array = [
     {
@@ -81,7 +80,7 @@ function getPicture(){
 
 
 
-//birdTailおしたら
+//birdTail,rabbitEarおしたら
 const birdTail = document.querySelector(".birdTail");
 const rabbitEar = document.querySelector(".rabbitEar")
 birdTail.addEventListener("click", bird);
@@ -120,9 +119,9 @@ function tyranAppear(){
     //tyrannoを動かす
     tyranno.animate( [ 
         {transform: "translateX(0)"},
-        {transform: "translateX(1800px)"}
+        {transform: "translateX(1000px)"}
         ],
-        {duration: 30000,
+        {duration: 6000,
         iterations:Infinity
         })  
 };
@@ -135,6 +134,16 @@ button2.addEventListener("click", () => {
   document.getElementById("main3").style.display = 'block';
 });
 
-//main2,main3つくる
 
+if (clickCount >= 7){
+    document.getElementById("none").innerText = "←";
+  }
+const back = document.getElementById("none");
+back.addEventListener("click", () => {
+  document.getElementById("main").style.display = 'block';
+  document.getElementById("main2").style.display = 'none';
+  document.getElementById("main3").style.display = 'none';
+
+});
+//main2,main3つくる
 
