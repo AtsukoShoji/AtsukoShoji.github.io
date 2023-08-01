@@ -1,4 +1,3 @@
-
 body {
     text-align:center;
     background-color: rgb(217, 247, 247)
@@ -27,19 +26,12 @@ body {
     background-size: 800px;
     height: 400px;
     width: 800px;
-    
-    /* 　//　HTML & CSS レイアウト　p18参照 */
-    float: left;
-}
 
-.backend{
-    background-image:none
+    float: left;
 }
 
 .picture{
     position: absolute;
-    top: "0px";
-    left: "0px";
 } 
 
 .bear{
@@ -85,10 +77,16 @@ body {
 
 .tyranno{
     margin-top: 40px;
-    margin-right: 200px;
+    margin-right: 400px;
     position: absolute;
     visibility: hidden;
+    animation: anim 60s;
 }
+
+@keyframes anim {
+    0% {transform:translateX(0px);}
+    100%{transform: translateX(500px);}
+    }
 
 .text {
     padding: auto;
@@ -142,5 +140,4 @@ body {
     font-size: 40px;
     display:none;
 }
-
 
