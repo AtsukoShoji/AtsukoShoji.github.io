@@ -85,8 +85,8 @@ body {
 }
 
 @keyframes anim {
-    0% {transform:translateX(0px);}
-    100%{transform: translateX(500px);}
+    0% {transform:translateX(-100px);}
+    100%{transform: translateX(800px);}
     }
 
 .text {
